@@ -13,16 +13,23 @@
 
         <Border
             Stroke="LightGray"
-            Padding="16">
+            >
             
             
-            <VerticalStackLayout>
+            <VerticalStackLayout
+                Spacing="4"
+                Padding="16">
                 <Label
                     Text="Peso en kilogramos"/>
-                <Entry />
+                <Entry 
+                    FontSize="Small"
+                    x:Name="PesoEntry"/>
                 <Label
-                    Text="Estatura en metros"/>
-                <Entry /> 
+                    Text="Estatura en metros"
+                    FontSize="Small"/>
+                <Entry 
+                    FontSize="Small"
+                    x:Name="EstaturaEntry"/> 
 
             </VerticalStackLayout>
         </Border>
@@ -32,10 +39,13 @@
             Spacing="36">
             <Button
                Text="Calcular"
-                FontSize="Small"/>
+                FontSize="Small"
+                Clicked="Calcular_Button_Clicked"/>
             <Button
                 Text="Limpiar"
-                FontSize="Small"/>
+                FontSize="Small"
+                Clicked="Limpiar_Button_Clicked"
+                />
 
 
         </HorizontalStackLayout>
@@ -48,14 +58,15 @@
                 Padding="16"
                 Spacing="4">
                 <Label
-                    Text="El indice demasa corporal de la persona es:"
+                    Text="El indice de masa corporal de la persona es:"
                     FontSize="Small"/>
 
                 <Label
                     Text="24.1234"
                     FontSize="Medium"
                     FontAttributes="Bold"
-                    HorizontalOptions="Center"/>
+                    HorizontalOptions="Center"
+                    x:Name="ImcLabel"/>
                 <Label
                         Text="La situacion nutricional de la persona es:"
                     FontSize="Small"/>
@@ -63,7 +74,8 @@
                     Text="Peso normal"
                     FontSize="Medium"
                     FontAttributes="Bold"
-                    HorizontalOptions="Center"/>
+                    HorizontalOptions="Center"
+                    x:Name="SituacionNutricionalLabel"/>
 
             </VerticalStackLayout>
             
