@@ -44,8 +44,7 @@
             <Button
                 Text="Limpiar"
                 FontSize="Small"
-                Clicked="Limpiar_Button_Clicked"
-                />
+                Clicked="Limpiar_Button_Clicked"/>
 
 
         </HorizontalStackLayout>
